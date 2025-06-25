@@ -41,7 +41,8 @@ A API permite o gerenciamento de livros, incluindo operações de cadastro, cons
 **Possíveis melhorias:**
 - Implementação de autenticação e autorização (ex: JWT).
 - Implementação de outro mecanismo de cache como por exemplo o Redis.
-- implementação do uso do Docker. 
+- implementação do uso do Docker.
+- Alteração de configuração do Banco de dados usado para o da preferência do usuário.  
 - Possível adição de testes de integração e cobertura de testes mais ampla.
 - Documentação automática dos endpoints com Swagger/OpenAPI.
 - Internacionalização das mensagens de erro.
@@ -53,3 +54,9 @@ A API permite o gerenciamento de livros, incluindo operações de cadastro, cons
 - Configuração do cache para cenários de atualização e invalidação eficiente.
 
 O projeto está estruturado para fácil manutenção e extensibilidade, seguindo padrões modernos de desenvolvimento Java e Spring Boot.
+
+**Execução do Projeto**
+- Não é necessário a instalação de nenhum banco de Dados pois neste projeto é utilizado um banco em memória.
+- Ter a jdk do Java 17 instalada e configurada no computador e na IDE de sua preferência para execução do projeto.
+- Ter o maven instalado e devidamente configurado no computador e na IDE para carregar as dependências do projeto.
+- Ao iniciar o projeto será realizado insert de dados de livros fakes no banco e a quantidade de dados pode ser alterada de acordo com a preferência do usuário que estiver utilizando o projeto ao acessar o método initializeBooks na classe BooksUtils.
